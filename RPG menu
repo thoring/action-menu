@@ -1,0 +1,41 @@
+def menu():
+    print("[1] Option West")
+    print("[2] Option East")
+    print("[3] Option North")
+    print("[4] Option South")
+    print("[5] Option Heal")
+    print("[6] Option Consume")
+    print("[7] Option Attack")
+    print("[8] Option Rest")
+    
+menu()
+option = int(input("Choose your directions: "))
+
+while option !=0:
+    if option ==1:
+        print("Option West will be headed.")
+    elif option ==2:
+        print("Option East will be headed.")
+    elif option ==3:
+        print("Option North will be headed.")
+    elif option ==4:
+        print("Option South will be headed.")
+    elif option ==5:
+        print("Your health will be heal for 10% and start cool down for 2minutes.")
+    elif option ==6:
+        print("You will consume any food within your inventory.")
+    elif option ==7:
+        print("You will slash twice at the object infront of you, and stamina will decrease 20points.")
+    elif option ==8:
+        print("Your character will enter sleep mode.")
+    else:
+        print("Invalid option")
+    
+    print()
+    menu()
+    option = int(input("Enter your option: "))
+    
+print("Thanks for using this program. Goodbye.")
+
+
+
